@@ -1,0 +1,10 @@
+build/
+dist/
+vsdk/
+generated/
+history/
+venv/
+__pycache__/
+*.exe
+*.pkg
+*.pyd

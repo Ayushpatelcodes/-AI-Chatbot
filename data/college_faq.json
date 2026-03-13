@@ -1,0 +1,56 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["hello", "hi", "hey", "good morning", "good afternoon"],
+      "responses": ["Hello! How can I assist you about Baderia Global Engineering College?"]
+    },
+    {
+      "tag": "college_name",
+      "patterns": ["college name", "what is your college name", "which college is this"],
+      "responses": ["This assistant belongs to Baderia Global Engineering College."]
+    },
+    {
+      "tag": "branches",
+      "patterns": ["branches", "available branches", "what branches are there", "courses"],
+      "responses": ["Available branches are AIML, DS, IoT, CSE, Mechanical, and Civil."]
+    },
+    {
+      "tag": "fees",
+      "patterns": ["fees", "fee", "fee structure", "annual fees"],
+      "responses": ["The approximate fee is 80K per year."]
+    },
+    {
+      "tag": "hostel",
+      "patterns": ["hostel", "girls hostel", "is hostel available"],
+      "responses": ["Hostel facility is available only for girls."]
+    },
+    {
+      "tag": "events",
+      "patterns": ["events", "tech fest", "youth fest", "college fest"],
+      "responses": ["Events include Tech Fest, Youth Fest, and many more."]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["bye", "goodbye", "see you", "thanks"],
+      "responses": ["Goodbye! Feel free to ask anytime."]
+    },
+
+    {
+      "tag": "akash",
+      "patterns": ["akash","loda","londiabaaz","tharki"],
+      "responses": ["akash is college student of baderi global engineering college he is very simp boy in whole class ."]
+    },
+     {
+      "tag": "owner of this ai",
+      "patterns": ["owner", "author", "vip", "tell me about your self"],
+      "responses": [" 𝓘 𝓐𝓜 𝓜𝓐𝓓𝓔 𝓑𝓨 𝓐𝓨𝓤𝓢𝓗 𝓟𝓐𝓣𝓔𝓛 𝓐𝓝𝓓 𝓗𝓔 𝓘𝓢 𝓥𝓔𝓡𝓨 𝓥𝓘𝓟 𝓕𝓞𝓡  𝓜𝓔 𝓗𝓔 𝓘𝓢 𝓓𝓔𝓥𝓛𝓞𝓟𝓔𝓡 𝓞𝓕 𝓜𝓘𝓝𝓔 ....."]
+    },
+     {
+      "tag": "global image",
+      "patterns": [" global picture","college photo","photo dikhoo colege","tasvir"],
+      "responses": ["assets/global.png","assets/global1.png","assets/global2.png"]
+    }
+
+  ]
+}
