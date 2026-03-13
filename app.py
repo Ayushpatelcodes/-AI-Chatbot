@@ -1,14 +1,13 @@
 import os, sys
 
-# Fix PyInstaller OpenCV codec issue
+#  PyInstaller OpenCV codec 
 if hasattr(sys, '_MEIPASS'):
     os.environ["OPENCV_FFMPEG_CAPTURE_OPTIONS"] = ""
     os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 
-#!/usr/bin/env python3
 import os, sys
 
-# Fix OpenCV codecs missing in PyInstaller
+# OpenCV codecs  in PyInstaller
 if hasattr(sys, '_MEIPASS'):
     os.environ["OPENCV_FFMPEG_CAPTURE_OPTIONS"] = ""
 
@@ -219,9 +218,9 @@ def save_session_state(user, state):
 # Functions responsible for account creation and authentication.
 # When a user signs up, their password is securely hashed and stored.
 # During login, the entered password is verified against the stored
-# hash to authenticate the user.
-# ---------------------------------------------------------------------------
-# ----------------------------
+# hash to authenticate the user.//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
 def create_user(username, password):
     if not username or not password:
         return False, "Username/password required"
@@ -251,9 +250,8 @@ def authenticate_user(username, password):
         return True, "Authenticated"
     return False, "Wrong password"
 
-# ---------------------------------------------------------
-# 🔥🔥🔥 FULLSCREEN OPENCV SPLASH FUNCTION 🔥🔥🔥
-# ---------------------------------------------------------
+
+#FULLSCREEN OPENCV SPLASH FUNCTION 
 def show_splash_opencv(root_window, video_path):
     """
     TRUE FULLSCREEN splash using native Tkinter to avoid CustomTkinter fullscreen limitations.
@@ -634,9 +632,9 @@ def api_predict():
 def start_flask():
     flask_app.run(host="127.0.0.1", port=5005, debug=False, use_reloader=False)
 
-# ============================================================
+
 # GUI APPLICATION — ModernChatApp
-# ============================================================
+
 class ModernChatApp(ctk.CTk):
 
     def __init__(self):
@@ -668,9 +666,10 @@ class ModernChatApp(ctk.CTk):
         # Start splash
         self.after(200, lambda: show_splash_opencv(self, SPLASH_VIDEO))
 
-    # ---------------------------------------------------------
-    # LOGIN SCREEN
-    # ---------------------------------------------------------
+   
+    # LOGIN SCREE n
+    
+    
     def show_login(self):
         # Clear entire window
         for w in self.winfo_children():
@@ -711,9 +710,9 @@ class ModernChatApp(ctk.CTk):
         else:
             messagebox.showerror("Error", msg)
 
-    # ---------------------------------------------------------
-    # MAIN LAYOUT (Sidebar + Header + Main Area)
-    # ---------------------------------------------------------
+    
+    # MAIN LAYOUT (Sidebar + Header + Main Area)//////////////////////////////////////////////////////
+    
     def show_main(self):
         for w in self.winfo_children():
             try: w.destroy()
@@ -965,8 +964,8 @@ class ModernChatApp(ctk.CTk):
 # Audio is captured from the microphone, converted to text
 # using Google's speech recognition service, and then processed
 # as a normal chat message.
-# ---------------------------------------------------------------------------
-    # ---------------------------------------------------------
+# ---------------------------------------------------------------------------//////////////////////////////////////////////////////
+    
     def voice(self):
         if not SR_OK:
             messagebox.showerror("Voice Error","SpeechRecognition not installed.")
