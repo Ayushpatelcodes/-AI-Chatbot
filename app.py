@@ -110,7 +110,7 @@ os.makedirs(ASSETS, exist_ok=True)
 # cannot produce a response.
 # ---------------------------------------------------------------------------
 # ----------------------------
-GEMINI_API_KEY = "AIzaSyBSqdT0H_niDg9oS6yNqgoDQIoxwaJtak0"
+GEMINI_API_KEY = ""  # input ur api key
 USE_GEMINI = False
 if GEMINI_API_KEY:
     try:
